@@ -25,6 +25,9 @@
                 Console.WriteLine("What is your favorite day of week? ");
                 DaysOfWeek favday = (DaysOfWeek) int.Parse(Console.ReadLine());
                 Console.WriteLine("Your favorite day is {0} ", favday);
+                Console.Write("Enter your brithdate: ");
+                string date = Console.ReadLine();
+                Console.Write("Your brithdate is {0} ", date);
                 Console.ReadKey();
                 }
 
