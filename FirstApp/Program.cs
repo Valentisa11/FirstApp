@@ -2,39 +2,38 @@
 {
     internal class Program
     {
-        class MainClass
+        public static void Main(string[] args)
         {
-            enum DaysOfWeek : byte
+            Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
 
+            var color = Console.ReadLine();
+
+            if (color == "red")
             {
-                Monday = 1,
-                Tuesday,
-                Wednesday,
-                Thursday,
-                Friday,
-                Saturday,
-                Sunday,
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Your color is red!");
             }
-            public static void Main(string[] args)
+
+            else if (color == "green")
             {
-                Console.Write("Enter your name: ");
-                string name = Console.ReadLine();
-                Console.Write("Enter your age: ");
-                byte age = checked((byte)int.Parse(Console.ReadLine()));
-                Console.WriteLine("Your name is {0} and age is {1} ", name, age);
-                Console.WriteLine("What is your favorite day of week? ");
-                DaysOfWeek favday = (DaysOfWeek) int.Parse(Console.ReadLine());
-                Console.WriteLine("Your favorite day is {0} ", favday);
-                Console.Write("Enter your brithdate: ");
-                string date = Console.ReadLine();
-                Console.Write("Your brithdate is {0} ", date);
-                Console.ReadKey();
-                }
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
 
-            
+                Console.WriteLine("Your color is green!");
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
 
+                Console.WriteLine("Your color is cyan!");
+                
+            }
+            Console.ReadKey();
         }
     }
 }
-        
+      
     
