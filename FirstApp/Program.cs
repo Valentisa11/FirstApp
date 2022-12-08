@@ -272,4 +272,3 @@ internal class Program
         Console.WriteLine("Сумма координат на карте: " + Point3.x + " " + string.Format("{0:0.00}", Point3.y));
     }
 }
-}
